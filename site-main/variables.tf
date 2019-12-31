@@ -11,6 +11,11 @@ variable "bucket_name" {
   description = "The name of the S3 bucket to create."
 }
 
+variable "aliases" {
+  type    = list(string)
+  default = []
+}
+
 variable "duplicate-content-penalty-secret" {
   type = string
 }
