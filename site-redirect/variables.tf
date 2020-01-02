@@ -11,6 +11,11 @@ variable "target" {
   type = string
 }
 
+variable "aliases" {
+  type    = list(string)
+  default = []
+}
+
 variable "duplicate-content-penalty-secret" {
   type = string
 }
